@@ -24,7 +24,7 @@
     {
       content: '最小代理合约的原理和运用',
       link: 'https://b23.tv/UleFdu6',
-      timestamp: '2024-10-30',
+      timestamp: '2023-10-30',
     }, 
     {
       content: '智能合约工程师的赚钱方法',
