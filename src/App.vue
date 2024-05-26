@@ -2,8 +2,8 @@
   <el-config-provider namespace="ep">
     <el-menu :default-active="activeIndex" mode="horizontal" :ellipsis="false" @select="handleSelect">
       <el-menu-item index="1" class="item"> 文章 </el-menu-item>
-      <el-menu-item index="2" class="item"> 工具 </el-menu-item>
-      <!-- <el-menu-item index="3" class="item"> 视频 </el-menu-item> -->
+      <el-menu-item index="2" class="item"> 视频 </el-menu-item>
+      <el-menu-item index="3" class="item"> 工具 </el-menu-item>
       <el-menu-item index="-1" class="item" @click="toggleDark()">
         <button class="border-none w-full bg-transparent cursor-pointer" style="height: var(--ep-menu-item-height)">
           <i inline-flex i="dark:ep-moon ep-sunny" />
@@ -16,8 +16,8 @@
     </el-menu>
     <div>
       <Article v-if="activeIndex == '1'"></Article>
-      <Tool v-if="activeIndex == '2'"></Tool>
-      <!-- <Video v-if="activeIndex == '3'"></Video> -->
+      <Video v-if="activeIndex == '2'"></Video>
+      <Tool v-if="activeIndex == '3'"></Tool>
     </div>
   </el-config-provider>
 </template>
