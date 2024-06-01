@@ -13,6 +13,11 @@
 <script lang="ts" setup>
 const activities = [
     {
+        content: '通过 GAS 排行搜寻新机会',
+        link: 'https://github.com/33357/smartcontract-apps/blob/main/Gas/GasSearch.md',
+        timestamp: '2024-6-1',
+    },
+    {
         content: '不受单个矿工控制的链上随机数生成方法',
         link: 'https://github.com/33357/smartcontract-apps/blob/main/Solidity/Other/random.md',
         timestamp: '2024-4-23',
