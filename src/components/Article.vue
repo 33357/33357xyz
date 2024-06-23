@@ -13,6 +13,11 @@
 <script lang="ts" setup>
 const activities = [
     {
+        content: '反闪电贷协议 EIP7690',
+        link: 'https://github.com/33357/smartcontract-apps/blob/main/EIPS/eip7690.md',
+        timestamp: '2024-6-23',
+    },
+    {
         content: '通过 GAS 排行搜寻新机会',
         link: 'https://github.com/33357/smartcontract-apps/blob/main/Gas/GasSearch.md',
         timestamp: '2024-6-1',
