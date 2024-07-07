@@ -16,6 +16,9 @@
       <el-menu-item index="-3" class="item" @click="toTG()">
         {{ `加入 TG 群` }}
       </el-menu-item>
+      <el-menu-item index="-3" class="item" @click="toGithub()">
+        {{ `关注 Github` }}
+      </el-menu-item>
     </el-menu>
     <div>
       <Article v-if="activeIndex == '1'"></Article>
@@ -64,6 +67,9 @@ export default {
     },
     toTG() {
       window.open('https://t.me/smartcontractapps', '_blank');
+    },
+    toGithub(){
+      window.open('https://github.com/33357', '_blank');
     },
     handleSelect(key: string) {
       if (Number(key) > 0) {
