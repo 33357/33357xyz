@@ -9,10 +9,13 @@
           <i inline-flex i="dark:ep-moon ep-sunny" />
         </button>
       </el-menu-item>
-      <!-- <div class="flex-grow" />
-      <el-menu-item index="-2" class="item2">
-        {{ utils.format.string2(state.home.userAddress, 8) }}
-      </el-menu-item> -->
+      <div class="flex-grow" />
+      <el-menu-item index="-2" class="item" @click="toX()">
+        {{ `关注 X` }}
+      </el-menu-item>
+      <el-menu-item index="-3" class="item" @click="toTG()">
+        {{ `加入 TG 群` }}
+      </el-menu-item>
     </el-menu>
     <div>
       <Article v-if="activeIndex == '1'"></Article>
@@ -56,6 +59,12 @@ export default {
   }),
   methods: {
     ...mapActions(["start"]),
+    toX() {
+      window.open('https://x.com/33357xyz', '_blank');
+    },
+    toTG() {
+      window.open('https://t.me/smartcontractapps', '_blank');
+    },
     handleSelect(key: string) {
       if (Number(key) > 0) {
         (this as any).activeIndex = key;
