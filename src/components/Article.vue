@@ -13,6 +13,11 @@
 <script lang="ts" setup>
 const activities = [
     {
+        content: '写一个 0 转账攻击合约',
+        link: 'https://github.com/33357/smartcontract-apps/blob/main/Event/0TransferAttack.md',
+        timestamp: '2024-7-7',
+    },
+    {
         content: '警惕科学家钓鱼合约',
         link: 'https://github.com/33357/smartcontract-apps/blob/main/Event/FishingScientist.md',
         timestamp: '2024-6-30',
