@@ -74,7 +74,7 @@ export default {
   methods: {
     ...mapActions(["start"]),
     toWX() {
-      window.open("/public/wx.jpg", "_blank");
+      window.open("/wx.jpg", "_blank");
     },
     toX() {
       window.open("https://x.com/33357xyz", "_blank");
