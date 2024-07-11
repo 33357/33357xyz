@@ -1,22 +1,33 @@
 <template>
   <el-config-provider namespace="ep">
-    <el-menu :default-active="activeIndex" mode="horizontal" :ellipsis="false" @select="handleSelect">
+    <el-menu
+      :default-active="activeIndex"
+      mode="horizontal"
+      :ellipsis="false"
+      @select="handleSelect"
+    >
       <el-menu-item index="1" class="item"> 文章 </el-menu-item>
       <el-menu-item index="2" class="item"> 视频 </el-menu-item>
       <el-menu-item index="3" class="item"> 工具 </el-menu-item>
       <el-menu-item index="-1" class="item" @click="toggleDark()">
-        <button class="border-none w-full bg-transparent cursor-pointer" style="height: var(--ep-menu-item-height)">
+        <button
+          class="border-none w-full bg-transparent cursor-pointer"
+          style="height: var(--ep-menu-item-height)"
+        >
           <i inline-flex i="dark:ep-moon ep-sunny" />
         </button>
       </el-menu-item>
       <div class="flex-grow" />
-      <el-menu-item index="-2" class="item" @click="toX()">
+      <el-menu-item index="-2" class="item" @click="toWX()">
+        {{ `关注 公众号` }}
+      </el-menu-item>
+      <el-menu-item index="-3" class="item" @click="toX()">
         {{ `关注 X` }}
       </el-menu-item>
-      <el-menu-item index="-3" class="item" @click="toTG()">
+      <el-menu-item index="-4" class="item" @click="toTG()">
         {{ `加入 TG 群` }}
       </el-menu-item>
-      <el-menu-item index="-3" class="item" @click="toGithub()">
+      <el-menu-item index="-5" class="item" @click="toGithub()">
         {{ `关注 Github` }}
       </el-menu-item>
     </el-menu>
@@ -62,14 +73,17 @@ export default {
   }),
   methods: {
     ...mapActions(["start"]),
+    toWX() {
+      window.open("/public/wx.jpg", "_blank");
+    },
     toX() {
-      window.open('https://x.com/33357xyz', '_blank');
+      window.open("https://x.com/33357xyz", "_blank");
     },
     toTG() {
-      window.open('https://t.me/smartcontractapps', '_blank');
+      window.open("https://t.me/smartcontractapps", "_blank");
     },
-    toGithub(){
-      window.open('https://github.com/33357', '_blank');
+    toGithub() {
+      window.open("https://github.com/33357", "_blank");
     },
     handleSelect(key: string) {
       if (Number(key) > 0) {
