@@ -19,6 +19,11 @@
 
 <script lang="ts" setup>
 const activities = [
+{
+    content: "AdventureX 和 EDCON",
+    link: "https://github.com/33357/smartcontract-apps/blob/main/Meeting/AdventureX&EDCON.md",
+    timestamp: "2024-8-3",
+  },
   {
     content: "写一个 0 转账攻击合约",
     link: "https://github.com/33357/smartcontract-apps/blob/main/Event/0TransferAttack.md",
