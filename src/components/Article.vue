@@ -19,7 +19,12 @@
 
 <script lang="ts" setup>
 const activities = [
-{
+  {
+    content: "一个 ETH 换一个 BTC，uniBTC 被盗千万",
+    link: "https://github.com/33357/smartcontract-apps/blob/main/Event/2024-9-27/README.md",
+    timestamp: "2024-9-27",
+  },
+  {
     content: "AdventureX 和 EDCON",
     link: "https://github.com/33357/smartcontract-apps/blob/main/Meeting/AdventureX&EDCON.md",
     timestamp: "2024-8-3",
