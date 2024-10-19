@@ -19,6 +19,11 @@
 
 <script lang="ts" setup>
 const activities = [
+{
+    content: "多钱包自动打币机器人",
+    link: "https://github.com/33357/smartcontract-apps/blob/main/Event/2024-10-19/README.md",
+    timestamp: "2024-10-19",
+},
   {
     content: "一个 ETH 换一个 BTC，uniBTC 被盗千万",
     link: "https://github.com/33357/smartcontract-apps/blob/main/Event/2024-9-27/README.md",
