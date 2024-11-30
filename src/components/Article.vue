@@ -20,6 +20,16 @@
 <script lang="ts" setup>
 const activities = [
 {
+    content: "Devcon 和 Smartcon",
+    link: "https://github.com/33357/smartcontract-apps/blob/main/Meeting/Devcon&Smartcon.md",
+    timestamp: "2024-11-30",
+},
+{
+    content: "多钱包自动打币机器人",
+    link: "https://github.com/33357/smartcontract-apps/blob/main/Event/2024-10-19/README.md",
+    timestamp: "2024-10-19",
+},
+{
     content: "多钱包自动打币机器人",
     link: "https://github.com/33357/smartcontract-apps/blob/main/Event/2024-10-19/README.md",
     timestamp: "2024-10-19",
