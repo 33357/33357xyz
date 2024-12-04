@@ -20,6 +20,11 @@
 <script lang="ts" setup>
 const activities = [
 {
+    content: "狂印 48 亿 U，新型加密资产质押协议 Ethena",
+    link: "https://github.com/33357/smartcontract-apps/blob/main/Event/Ethena.md",
+    timestamp: "2024-12-4",
+},
+{
     content: "Devcon 和 Smartcon",
     link: "https://github.com/33357/smartcontract-apps/blob/main/Meeting/Devcon&Smartcon.md",
     timestamp: "2024-11-30",
